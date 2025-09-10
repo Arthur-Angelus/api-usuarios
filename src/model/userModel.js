@@ -16,7 +16,7 @@ const findById = (id) => {
 
 //função para adicionar um novo usuario
 const create = (newUser) => {
-    const newId = user.length > 0 ? users[users.length - 1].id + 1 : 1;
+    const newId = users.length > 0 ? users[users.length - 1].id + 1 : 1;
     const userWithId = { id: newId, ...newUser };
     users.push(userWithId);
     return userWithId;
